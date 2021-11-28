@@ -2,6 +2,7 @@ package com.artineer.spring_lecture_week_2.domain;
 
 import com.artineer.spring_lecture_week_2.dto.ArticleDto;
 import lombok.*;
+import org.springframework.data.redis.core.RedisHash;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Entity
+@RedisHash
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

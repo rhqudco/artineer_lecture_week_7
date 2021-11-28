@@ -21,6 +21,9 @@ dependencies {
 
 	compileOnly 'mysql:mysql-connector-java'
 
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 
 	compileOnly 'org.projectlombok:lombok:1.18.20'
